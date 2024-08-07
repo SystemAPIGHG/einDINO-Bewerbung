@@ -1,0 +1,16 @@
+name: BannHammer
+version: '${project.version}'
+main: rorg.example.bannhammer.PunishmentGUI
+api-version: '1.8'
+commands:
+  punish:
+    description: Opens the punishment GUI.
+    usage: /punish
+  unban:
+    description: Unbans a player.
+    usage: /unban <player>
+  punishmentgui.use:
+    description: Allows the use of the punishment GUI
+    default: true
+dependencies:
+  - HikariCP: 5.0.1
